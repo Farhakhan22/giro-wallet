@@ -1,0 +1,26 @@
+ion-content.background{
+   
+    --background: url(src\assets\img\user.jpg) 
+     
+}
+ion-card.theme{
+    margin-top: 70px;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, .4);
+}
+ion-button.loginbtn{
+    margin-left: 20px;
+    margin-top: 15px;
+    border-radius: 35px;
+    background-color: rgba(255, 255, 255, .4);
+}
+ion-button.login2btn{
+    margin-left: 10px;
+    margin-top: 10px;
+    border-radius: 85px;
+    background-color: rgba(255, 255, 255, .4);
+}
+ion-item.email{
+    border-radius: 10px;
+    margin-bottom: 15px;
+}

@@ -1,0 +1,54 @@
+<ion-header>
+  <ion-toolbar color="dark">
+    <ion-title align="center">Dashboard</ion-title>
+  </ion-toolbar>
+</ion-header>
+ 
+<ion-content padding class="background">
+  <div>
+    <ion-card class="theme">
+    
+      <ion-card-header>
+     
+      </ion-card-header>
+    
+      <ion-card-content>
+        <form >
+   
+          <ion-item  class="email">
+           
+             <ion-grid>
+    <ion-row>
+     
+      <ion-avatar class="img">
+        <img src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__340.jpg">
+      </ion-avatar>
+    </ion-row>
+    <ion-row>
+      <ion-col class="text" text-center *ngFor="let user of userData">
+        <label>Username :</label>
+        <p>{{user.first_name}} {{user.last_name}}</p>
+        <label>Email : </label>
+        <p>{{user.email}}</p>
+        <label>Mobile : </label>
+        <p>{{user.mobile_number}}</p>
+        <label>Wallet_balance : </label>
+        <p>{{user.wallet_balance}}</p>
+      </ion-col>
+    </ion-row>
+  </ion-grid> 
+  
+          </ion-item>
+          <ion-button (click)="goTouserWalletPage()" class="payebtn">wallet pay</ion-button>
+          
+        </form>
+      </ion-card-content>
+    
+    </ion-card>
+    </div>
+</ion-content>
+<ion-footer (click)="logout()">
+  <ion-toolbar color="primary">
+    <ion-title>Log out</ion-title>
+  </ion-toolbar>
+</ion-footer>
